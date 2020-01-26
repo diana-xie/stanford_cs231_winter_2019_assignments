@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c311c518-703e-4f4a-af46-ccc2b79b6f72" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="assignment1" />
+  </component>
+  <component name="ProjectId" id="1Vi9AxYQBWwAQZGqk5iheE2ozJb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c311c518-703e-4f4a-af46-ccc2b79b6f72" name="Default Changelist" comment="" />
+      <created>1577724909148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577724909148</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3731" y="510" key="#Notifications" timestamp="1577725057565">
+      <screen x="3200" y="260" width="1920" height="1170" />
+    </state>
+    <state x="3731" y="510" key="#Notifications/0.30.1600.870/3200.260.1920.1170@3200.260.1920.1170" timestamp="1577725057565" />
+    <state x="3593" y="569" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577727386947">
+      <screen x="3200" y="260" width="1920" height="1170" />
+    </state>
+    <state x="3593" y="569" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1600.870/3200.260.1920.1170@3200.260.1920.1170" timestamp="1577727386947" />
+    <state x="3819" y="580" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577724955544">
+      <screen x="3200" y="260" width="1920" height="1170" />
+    </state>
+    <state x="3819" y="580" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1600.870/3200.260.1920.1170@3200.260.1920.1170" timestamp="1577724955544" />
+    <state x="4010" y="827" key="FileChooserDialogImpl" timestamp="1577725904531">
+      <screen x="3200" y="260" width="1920" height="1170" />
+    </state>
+    <state x="4010" y="827" key="FileChooserDialogImpl/0.30.1600.870/3200.260.1920.1170@3200.260.1920.1170" timestamp="1577725904531" />
+    <state x="3732" y="717" width="998" height="708" key="SettingsEditor" timestamp="1577725941529">
+      <screen x="3200" y="260" width="1920" height="1170" />
+    </state>
+    <state x="3732" y="717" width="998" height="708" key="SettingsEditor/0.30.1600.870/3200.260.1920.1170@3200.260.1920.1170" timestamp="1577725941529" />
+  </component>
+</project>
