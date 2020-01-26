@@ -106,7 +106,7 @@ class TwoLayerNet(object):
         # scores, transformed to probabilities by softmax, for the correct classifications
         a2 = np.exp(z2)/np.sum(np.exp(z2), axis=1, keepdims=True)  # softmax - activation layer 2
         
-        correct_score_softmax = a2[np.arange(N), y]  # score for probably of the correct classification 
+        correct_score_softmax = a2[np.arange(N), y]  # score for probability of the correct classification 
         loss = -np.sum(np.log(correct_score_softmax))
         loss = (loss/N) + (reg*np.sum(W1*W1)) + (reg*np.sum(W2*W2)) # total loss, after L2 reg on weight matrices
 
@@ -178,8 +178,10 @@ class TwoLayerNet(object):
             # them in X_batch and y_batch respectively.                             #
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
-            pass
+            
+            idx = np.random.choice(num_train, batch_size)
+            X_batch = X[idx]
+            y_batch = y[idx]
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
@@ -195,7 +197,8 @@ class TwoLayerNet(object):
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            pass
+            for param_name in self.params:
+                self.params[param_name] -= learning_rate * grads[param_name]
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
@@ -241,7 +244,7 @@ class TwoLayerNet(object):
         ###########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
+        y_pred = np.argmax(self.loss(X), axis=1)
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 

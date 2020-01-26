@@ -4,7 +4,8 @@ from builtins import range
 from six.moves import cPickle as pickle
 import numpy as np
 import os
-from scipy.misc import imread
+# from scipy.misc import imread
+from matplotlib.pyplot import imread
 import platform
 
 def load_pickle(f):
@@ -18,6 +19,7 @@ def load_pickle(f):
 def load_CIFAR_batch(filename):
     """ load single batch of cifar """
     with open(filename, 'rb') as f:
+        print(filename)
         datadict = load_pickle(f)
         X = datadict['data']
         Y = datadict['labels']
@@ -30,7 +32,10 @@ def load_CIFAR10(ROOT):
     xs = []
     ys = []
     for b in range(1,6):
+#         f = os.path.join(ROOT + '/', 'data_batch_%d' % (b, ))  # added  + '/', since error in windows where turns into "//"
+#         f.replace('\\', '/')
         f = os.path.join(ROOT, 'data_batch_%d' % (b, ))
+        print(f)
         X, Y = load_CIFAR_batch(f)
         xs.append(X)
         ys.append(Y)
@@ -49,10 +54,12 @@ def get_CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000,
     condensed to a single function.
     """
     # Load the raw CIFAR-10 data
-    cifar10_dir = 'cs231n/datasets/cifar-10-batches-py'
-    X_train, y_train, X_test, y_test = load_CIFAR10(cifar10_dir)
+#     cifar10_dir = 'cs231n\datasets\cifar-10-batches-py'
+#     cifar10_dir = 'cs231n\\datasets\\cifar-10-batches-py\\'
+    cifar10_dir = 'C:\\Users\\Diana\\Desktop\\Stanford_CS231_spring1819_assignments\\assignment1\\cs231n\\datasets\\cifar-10-batches-py'
+    X_train, y_train, X_test, y_test = load_CIFAR10(cifar10_dir)  # there is a change
 
-    # Subsample the data
+    # ubsample the data
     mask = list(range(num_training, num_training + num_validation))
     X_val = X_train[mask]
     y_val = y_train[mask]
